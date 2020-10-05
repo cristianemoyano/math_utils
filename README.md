@@ -2,6 +2,43 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Visit the site here: [Math Utils](https://cristianemoyano.github.io/math_utils/).
 
+
+## Development Process
+
+### Clone repository
+
+
+```
+git clone https://github.com/cristianemoyano/math_utils.git
+cd math_utils
+```
+
+
+### New change
+
+In the project directory, start creating a new branch for your change. 
+
+```
+git checkout -b my-change-title
+```
+
+Once the changes are ready, commit and push them:
+
+```
+git add -p
+git commit -m 'Your commit message'
+git push origin my-change-title
+```
+
+Create a pull request for your changes on GitHub by visiting:
+
+```
+https://github.com/cristianemoyano/math_utils/pull/new/<your branch>
+```
+
+Wait for code review, and once the review is done, merge the code to the `main` branch.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
