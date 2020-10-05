@@ -19,6 +19,7 @@ cd math_utils
 In the project directory, start creating a new branch for your change. 
 
 ```
+git pull
 git checkout -b my-change-title
 ```
 
@@ -38,6 +39,20 @@ https://github.com/cristianemoyano/math_utils/pull/new/<your branch>
 
 Wait for code review, and once the review is done, merge the code to the `main` branch.
 
+Delete branch locally
+
+```
+git checkout main
+git branch -d my-change-title
+git pull
+```
+
+### Deploy changes
+
+```
+yarn predeploy
+yarn deploy
+```
 
 ## Available Scripts
 
