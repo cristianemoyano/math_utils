@@ -74,6 +74,26 @@ yarn deploy
 https://travis-ci.com/github/cristianemoyano/math_utils
 ```
 
+### Git releases (aka Tags)
+
+List tags:
+```
+git tag
+```
+
+Commit a new tag:
+
+```
+git tag -a v1.0 -m "My version 1.0"
+```
+
+Push tag created:
+
+```
+git push origin v0.0.1
+
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
