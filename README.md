@@ -8,13 +8,14 @@ Visit the site here: [Math Utils](https://cristianemoyano.github.io/math_utils/)
 
 This is a web application created for academic purposes.
 
-Subject: Programming II
-University: Champagnat University
+Date: 2020/10/6.
+Subject: Programming II.
+University: Champagnat University.
 Authors:
 
-- Cristian Moyano
-- Franco Navarro
-- Jeremias Etura
+- Cristian Emmanuel Moyano.
+- Franco Nicolas Navarro.
+- Jeremias Etura.
 
 ## Development Process
 
