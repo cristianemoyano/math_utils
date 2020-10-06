@@ -4,7 +4,6 @@ Visit the site here: [Math Utils](https://cristianemoyano.github.io/math_utils/)
 
 [![Build Status](https://travis-ci.com/cristianemoyano/math_utils.svg?branch=main)](https://travis-ci.com/cristianemoyano/math_utils)
 
-
 ## Overview
 
 This is a web application created for academic purposes.
@@ -12,25 +11,23 @@ This is a web application created for academic purposes.
 Subject: Programming II
 University: Champagnat University
 Authors:
+
 - Cristian Moyano
 - Franco Navarro
 - Jeremias Etura
 
-
 ## Development Process
 
 ### Clone repository
-
 
 ```
 git clone https://github.com/cristianemoyano/math_utils.git
 cd math_utils
 ```
 
-
 ### New change
 
-In the project directory, start creating a new branch for your change. 
+In the project directory, start creating a new branch for your change.
 
 ```
 git pull
@@ -77,6 +74,7 @@ https://travis-ci.com/github/cristianemoyano/math_utils
 ### Git releases (aka Tags)
 
 List tags:
+
 ```
 git tag
 ```
@@ -131,8 +129,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-
-
 ### `yarn predeploy`
 
 The predeploy command helps to bundle the react app.
@@ -141,6 +137,11 @@ The predeploy command helps to bundle the react app.
 
 The deploy command fires up the bundled file against the Github Page.
 
+### `yarn lint`
+
+https://eslint.org/docs/user-guide/configuring.html#example-configuration
+
+Check lint with ESLint rules. This lint run automatic the running of eslint before every GIT COMMIT command.
 
 ## Learn More
 
