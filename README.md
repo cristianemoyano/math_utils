@@ -18,7 +18,7 @@ Authors:
 
 ## Development Process
 
-### Clone repository
+### How to clone repository
 
 ```
 git clone https://github.com/cristianemoyano/math_utils.git
