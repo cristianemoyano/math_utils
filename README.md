@@ -54,6 +54,12 @@ yarn predeploy
 yarn deploy
 ```
 
+### Continuous Integration Platform: Travis
+
+```
+https://travis-ci.com/github/cristianemoyano/math_utils
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
