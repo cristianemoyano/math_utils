@@ -5,6 +5,18 @@ Visit the site here: [Math Utils](https://cristianemoyano.github.io/math_utils/)
 [![Build Status](https://travis-ci.com/cristianemoyano/math_utils.svg?branch=main)](https://travis-ci.com/cristianemoyano/math_utils)
 
 
+## Overview
+
+This is a web application created for academic purposes.
+
+Subject: Programming II
+University: Champagnat University
+Authors:
+- Cristian Moyano
+- Franco Navarro
+- Jeremias Etura
+
+
 ## Development Process
 
 ### Clone repository
