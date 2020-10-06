@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Visit the site here: [Math Utils](https://cristianemoyano.github.io/math_utils/).
 
+[![Build Status](https://travis-ci.com/cristianemoyano/math_utils.svg?branch=main)](https://travis-ci.com/cristianemoyano/math_utils)
+
 
 ## Development Process
 
@@ -52,6 +54,12 @@ git pull
 ```
 yarn predeploy
 yarn deploy
+```
+
+### Continuous Integration Platform: Travis
+
+```
+https://travis-ci.com/github/cristianemoyano/math_utils
 ```
 
 ## Available Scripts
