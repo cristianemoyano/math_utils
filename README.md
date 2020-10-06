@@ -25,7 +25,7 @@ git clone https://github.com/cristianemoyano/math_utils.git
 cd math_utils
 ```
 
-### New change
+### How to add a new change
 
 In the project directory, start creating a new branch for your change.
 
