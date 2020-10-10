@@ -4,7 +4,7 @@ class Header extends React.PureComponent {
    render() {
       return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="/">Math Utils</a>
+          <a className="navbar-brand" href="/math_utils">Math Utils</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
@@ -16,9 +16,9 @@ class Header extends React.PureComponent {
                   Functions
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/fibonacci">Fibonacci</a>
-                  <a className="dropdown-item" href="/factorial">Factorial</a>
-                  <a className="dropdown-item" href="/gcd">GCD</a>
+                  <a className="dropdown-item" href="/math_utils/fibonacci">Fibonacci</a>
+                  <a className="dropdown-item" href="/math_utils/factorial">Factorial</a>
+                  <a className="dropdown-item" href="/math_utils/gcd">GCD</a>
                 </div>
               </li>
             </ul>

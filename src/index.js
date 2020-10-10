@@ -25,27 +25,19 @@ import * as serviceWorker from './serviceWorker';
 
 export default function Main() {
   return (
-    <BrowserRouter basename="/math_utils">
-      <div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/factorial">
-            <Factorial />
-          </Route>
-          <Route component={PageNotFound} />
-        </Switch>
-      </div>
-    </BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/factorial" component={Factorial} />
+      <Route component={PageNotFound} />
+    </Switch>
   );
 }
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter basename="/math_utils">
     <Main />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
