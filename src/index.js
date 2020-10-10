@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/index.css';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route,
 } from "react-router-dom";
 import Home from './pages/Home';
 import Factorial from './pages/Factorial';
+import PageNotFound from './pages/PageNotFound';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -24,18 +25,19 @@ import * as serviceWorker from './serviceWorker';
 
 export default function Main() {
   return (
-    <Router>
+    <BrowserRouter basename="/math_utils">
       <div>
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/factorial">
+          <Route exact path="/factorial">
             <Factorial />
           </Route>
+          <Route component={PageNotFound} />
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
