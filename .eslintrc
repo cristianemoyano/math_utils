@@ -11,7 +11,9 @@
     "prettier"
   ],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-no-bind": "off",
+    "import/prefer-default-export": "off"
   },
   "ignorePatterns": ["*.test.js", "serviceWorker.js"],
 }
