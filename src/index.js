@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import Factorial from './pages/Factorial';
+import GCDPage from './pages/GCD';
 import PageNotFound from './pages/PageNotFound';
 import * as serviceWorker from './serviceWorker';
 
@@ -28,6 +29,7 @@ export default function Main() {
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/factorial" component={Factorial} />
+      <Route exact path="/gcd" component={GCDPage} />
       <Route component={PageNotFound} />
     </Switch>
   );
