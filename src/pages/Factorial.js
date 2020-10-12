@@ -1,7 +1,7 @@
 import React from 'react';
 import {factorial} from '../math/factorial';
 import Header from '../components/Header';
-import UtilCard from '../components/UtilCard';
+import {UtilCard, UtilCard2} from '../components/UtilCard';
 
 class FactorialPage extends React.Component {
 
@@ -28,7 +28,7 @@ class FactorialPage extends React.Component {
 	render() {
 		const {result} = this.state;
 	    return (
-			<>
+			<div>
 				<Header/>
 				<UtilCard
 					header="Factorial"
@@ -41,7 +41,27 @@ class FactorialPage extends React.Component {
 					onChange={this.setValue.bind(this)}
 					btnPlaceholder="Integer value"
 				/>
-			</>
+
+				<UtilCard2
+					header="Factorial"
+					title="Factorial"
+					description={"Enter an integer value and click on 'calculate' button or enter the 'Enter' key."}
+
+					inputName1="1"
+					inputPlaceholder1="1"
+					inputType1="number"
+					onChange1={this.setValue.bind(this)}
+
+					inputName2="2"
+					inputPlaceholder2="2"
+					inputType2="number"
+					onChange2={this.setValue.bind(this)}
+
+					btnValue="Calculate"
+					result={result}
+					action={this.handleChange.bind(this)}
+				/>
+			</div>
 	    );
 	}
 }
