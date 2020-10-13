@@ -4,7 +4,8 @@ import {gcd} from '../math/gcd';
 
 
 it('Greatest common divisor of two whole numbers', () => {
-    expect(gcd(5, 10)).toEqual(5);
+	expect(gcd(5, 10)).toEqual(5);
+	expect(gcd(50, 25)).toEqual(25);
 });
 
 it('Greatest common divisor of two floating numbers', () => {
