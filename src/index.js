@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import Factorial from './pages/Factorial';
+import FibonacciPage from './pages/Fibonacci';
 import GCDPage from './pages/GCD';
 import PageNotFound from './pages/PageNotFound';
 import * as serviceWorker from './serviceWorker';
@@ -30,6 +31,7 @@ export default function Main() {
       <Route exact path="/" component={Home} />
       <Route exact path="/factorial" component={Factorial} />
       <Route exact path="/gcd" component={GCDPage} />
+      <Route exact path="/fibonacci" component={FibonacciPage} />
       <Route component={PageNotFound} />
     </Switch>
   );
