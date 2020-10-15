@@ -1,6 +1,5 @@
 import React from 'react';
 import {fibonacci} from '../math/fibonacci';
-import Header from '../components/Header';
 import {UtilCard} from '../components/UtilCard';
 
 class FibonacciPage extends React.Component {
@@ -29,7 +28,6 @@ class FibonacciPage extends React.Component {
 		const {result} = this.state;
 	    return (
 			<div>
-				<Header/>
 				<UtilCard
 					header="Fibonacci"
 					title="Fibonacci"
