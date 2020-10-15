@@ -42,7 +42,7 @@ Title.propTypes = {
 function Link({href, msg}) {
   if (href) {
     return (
-    	<a href={href} target="_blank"  rel="noopener noreferrer">{msg}</a>
+    	<a href={href} target="_blank"  className="btn btn-primary" rel="noopener noreferrer">{msg}</a>
     );
   }
   return (<React.Fragment />);
