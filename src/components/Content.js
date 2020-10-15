@@ -106,7 +106,7 @@ class Content extends React.PureComponent {
 
 	        	<Title title='Features' />
 	        	<Item
-	        		title='GitHub Pages'
+	        		title='This project is hosted by GitHub Pages'
 	        		description='GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.'
 	        		href='https://pages.github.com/'
 	        		msg='Learn more &gt;&gt;'
