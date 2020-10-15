@@ -1,6 +1,5 @@
 import React from 'react';
 import {gcd} from '../math/gcd';
-import Header from '../components/Header';
 import {UtilCard2} from '../components/UtilCard';
 
 class GCDPage extends React.Component {
@@ -33,8 +32,7 @@ class GCDPage extends React.Component {
 	render() {
 		const {result} = this.state;
 	    return (
-			<>
-				<Header/>
+			<React.Fragment>
 				<UtilCard2
                     header="GCD"
                     title="GCD"
@@ -54,7 +52,7 @@ class GCDPage extends React.Component {
                     result={result}
                     action={this.handleChange.bind(this)}
                 />
-			</>
+			</React.Fragment>
 	    );
 	}
 }

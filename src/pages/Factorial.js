@@ -1,6 +1,5 @@
 import React from 'react';
 import {factorial} from '../math/factorial';
-import Header from '../components/Header';
 import {UtilCard} from '../components/UtilCard';
 
 class FactorialPage extends React.Component {
@@ -28,8 +27,7 @@ class FactorialPage extends React.Component {
 	render() {
 		const {result} = this.state;
 	    return (
-			<div>
-				<Header/>
+			<React.Fragment>
 				<UtilCard
 					header="Factorial"
 					title="Factorial"
@@ -41,7 +39,7 @@ class FactorialPage extends React.Component {
 					onChange={this.setValue.bind(this)}
 					btnPlaceholder="Integer value"
 				/>
-			</div>
+			</React.Fragment>
 	    );
 	}
 }

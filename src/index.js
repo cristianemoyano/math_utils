@@ -6,6 +6,8 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Factorial from './pages/Factorial';
 import FibonacciPage from './pages/Fibonacci';
@@ -40,7 +42,11 @@ export default function Main() {
 
 ReactDOM.render(
   <BrowserRouter basename="/math_utils">
-    <Main />
+      <div className="App">
+        <Header/>
+        <Main />
+        <Footer />
+      </div>
   </BrowserRouter>,
   document.getElementById('root')
 );

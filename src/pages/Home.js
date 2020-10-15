@@ -1,15 +1,18 @@
 import React from 'react';
-import Header from '../components/Header';
+import Jumbotron from '../components/Jumbotron';
+import Content from '../components/Content';
 import '../assets/App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
 function Home() {
   return (
-    <div className="App">
-      <Header/>
-    </div>
+  	<React.Fragment>
+      	<Jumbotron/>
+      	<Content/>
+    </React.Fragment>
   );
 }
 
 export default Home;
+
