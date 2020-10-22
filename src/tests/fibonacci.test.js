@@ -10,6 +10,7 @@ it('fibonacci of a integer number', () => {
 it('fibonacci of a negative number', () => {
 	expect(fibonacci(-1)).toEqual([0, 1]);
 	expect(fibonacci(-4)).toEqual([0, 1, 1, 2, 3]);
+
 });
 
 it('fibonacci of a float number', () => {

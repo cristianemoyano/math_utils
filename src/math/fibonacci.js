@@ -16,5 +16,4 @@ export const fibonacci = (num) => {
     const serie = fibonacci(numParsed - 1);
     serie.push(serie[serie.length - 1] + serie[serie.length - 2]);
     return serie;
-    
 }
