@@ -8,8 +8,8 @@ export const gcd = (firstNum, secondNum) =>{
     if (secondNum === undefined || secondNum === null) {
         return null;    
     }   
-    const firstNumParsed = parseInt(Number(firstNum), 10);
-    const secondNumParsed = parseInt(Number(secondNum), 10);
+    const firstNumParsed = parseInt(Math.abs(Number(firstNum)), 10);
+    const secondNumParsed = parseInt(Math.abs(Number(secondNum)), 10);
 
     if (firstNumParsed > secondNumParsed){
         if (secondNumParsed === 0){
