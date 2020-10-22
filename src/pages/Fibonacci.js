@@ -6,7 +6,7 @@ class FibonacciPage extends React.Component {
 
 	constructor(props) {
 	  super(props);
-	  this.state = { result: null, value: null };
+	  this.state = { result: null, value: null, serie: [] };
 	}
 
 	setValue(event)  {
@@ -18,20 +18,23 @@ class FibonacciPage extends React.Component {
 		// On Enter or on click
 	    if (event.keyCode === 13 || event.type === 'click') {
 	    	const {value} = this.state;
-	    	const result = fibonacci(value);
-	    	this.setState({result});
+			const serie = fibonacci(value);
+			const serieStr = JSON.stringify(serie);
+	    	this.setState({result:serie[serie.length-1], serie: serieStr});
 	    }
 
 	 }
 
 	render() {
-		const {result} = this.state;
+		const {result, serie} = this.state;
 	    return (
 			<div>
 				<UtilCard
 					header="Fibonacci"
 					title="Fibonacci"
+					title2="Serie"
 					result={result}
+					result2={serie}
 					description={"Enter an integer value and click on 'calculate' button or enter the 'Enter' key."}
 					btnValue="Calculate"
 					inputType="number"
