@@ -9,6 +9,14 @@ it('Greatest common divisor of two whole numbers', () => {
 	expect(gcd(475, 950)).toEqual(475);
 });
 
+it('Greatest common divisor of two negative numbers', () => {
+	expect(gcd(-5, 10)).toEqual(5);
+	expect(gcd(-50, 25)).toEqual(25);
+	expect(gcd(-100, 50)).toEqual(50);
+	expect(gcd(-150, 300)).toEqual(150);
+	expect(gcd(-475, 950)).toEqual(475);
+});
+
 it('Greatest common divisor of two floating numbers', () => {
 	//The value is casted to int.
 	expect(gcd(5.1, 10.1)).toEqual(5);
