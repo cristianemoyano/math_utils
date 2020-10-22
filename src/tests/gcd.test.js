@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {gcd} from '../math/gcd';
 
 

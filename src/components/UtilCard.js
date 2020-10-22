@@ -3,24 +3,45 @@ import PropTypes from 'prop-types';
 import {InputGroup, SimpleInput} from "./Input";
 import {Button} from "./Button";
 
+function Title({title, result}) {
+	if (title) {
+	  return (<h5 className="card-title">{title}: {result}</h5>);
+	}
+	return null;
+}
+Title.propTypes = {
+	title: PropTypes.string,
+	result: PropTypes.number,
+};
+Title.defaultProps = {
+	title: null,
+	result: null,
+};
+
 export function UtilCard({
 	header,
 	title,
+	title2,
 	description,
 	btnValue,
 	btnPlaceholder,
 	inputType,
 	result,
+	result2,
 	action,
 	onChange
 }) {
+
+
+
 	return (
 		<div className="card">
 		  <div className="card-header">
 		    {header}
 		  </div>
 		  <div className="card-body">
-		    <h5 className="card-title">{title}: {result}</h5>
+			<Title title={title} result={result} />
+			<Title title={title2} result={result2} />
 		    <p className="card-text">{description}</p>
 	    	<InputGroup
     			action={action}
@@ -37,13 +58,20 @@ export function UtilCard({
 UtilCard.propTypes = {
 	header: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,
+	title2: PropTypes.string,
 	description: PropTypes.string.isRequired,
 	btnValue: PropTypes.string.isRequired,
 	btnPlaceholder: PropTypes.string.isRequired,
 	inputType: PropTypes.string.isRequired,
-	result: PropTypes.string.isRequired,
+	result: PropTypes.number,
+	result2: PropTypes.number,
 	action: PropTypes.func.isRequired,
 	onChange: PropTypes.func.isRequired,
+};
+UtilCard.defaultProps = {
+	title2: null, 
+	result: null,
+	result2: null,
 };
 
 
@@ -104,7 +132,10 @@ UtilCard2.propTypes = {
 	inputName2: PropTypes.string.isRequired,
 	inputPlaceholder2: PropTypes.string.isRequired,
 	inputType2: PropTypes.string.isRequired,
-	result: PropTypes.string.isRequired,
+	result: PropTypes.string,
 	action: PropTypes.func.isRequired,
 	btnValue: PropTypes.string.isRequired,
+};
+UtilCard2.defaultProps = {
+	result: null,
 };

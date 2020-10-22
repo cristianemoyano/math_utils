@@ -6,8 +6,11 @@ export const fibonacci = (num) => {
         return null;
     }
     const numParsed = parseInt(Number(num), 10);
-    if (numParsed<=1) {
-        return numParsed;
+    if (numParsed===1) {
+        return [0, 1];
     } 
-    return fibonacci(numParsed-1) + fibonacci(numParsed-2);
+        const serie = fibonacci(numParsed - 1);
+        serie.push(serie[serie.length - 1] + serie[serie.length - 2]);
+        return serie;
+    
 }
