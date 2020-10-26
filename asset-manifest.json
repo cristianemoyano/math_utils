@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/math_utils/static/css/main.9900741b.chunk.css",
-    "main.js": "/math_utils/static/js/main.ca9fabd4.chunk.js",
-    "main.js.map": "/math_utils/static/js/main.ca9fabd4.chunk.js.map",
+    "main.js": "/math_utils/static/js/main.19448caa.chunk.js",
+    "main.js.map": "/math_utils/static/js/main.19448caa.chunk.js.map",
     "runtime-main.js": "/math_utils/static/js/runtime-main.ebd65945.js",
     "runtime-main.js.map": "/math_utils/static/js/runtime-main.ebd65945.js.map",
     "static/css/2.f3cffc9e.chunk.css": "/math_utils/static/css/2.f3cffc9e.chunk.css",
     "static/js/2.4cd09369.chunk.js": "/math_utils/static/js/2.4cd09369.chunk.js",
     "static/js/2.4cd09369.chunk.js.map": "/math_utils/static/js/2.4cd09369.chunk.js.map",
     "index.html": "/math_utils/index.html",
-    "precache-manifest.1c76139b9326bf8a7b2c25dc682d2fab.js": "/math_utils/precache-manifest.1c76139b9326bf8a7b2c25dc682d2fab.js",
+    "precache-manifest.3eba07d10e279051196a99687ae8f87a.js": "/math_utils/precache-manifest.3eba07d10e279051196a99687ae8f87a.js",
     "service-worker.js": "/math_utils/service-worker.js",
     "static/css/2.f3cffc9e.chunk.css.map": "/math_utils/static/css/2.f3cffc9e.chunk.css.map",
     "static/css/main.9900741b.chunk.css.map": "/math_utils/static/css/main.9900741b.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.f3cffc9e.chunk.css",
     "static/js/2.4cd09369.chunk.js",
     "static/css/main.9900741b.chunk.css",
-    "static/js/main.ca9fabd4.chunk.js"
+    "static/js/main.19448caa.chunk.js"
   ]
 }
